@@ -1,0 +1,20 @@
+/* body{
+     position:fixed;
+} */
+
+
+.deal
+{
+     position: relative;
+     bottom: 850px;
+     left: 430px;
+
+}
+.item
+{
+     /* position: static; */
+     top: 30px;
+     left: 0;
+
+}
+

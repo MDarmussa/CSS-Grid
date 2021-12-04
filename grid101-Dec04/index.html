@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Grid</title>
+
+     <style>
+
+     .grid-container {
+     display: grid;
+     /* grid-template-columns: 80px 200px auto 40px; */
+     /* grid-template-columns: 1fr 1fr 1fr; */
+     grid-auto-columns: repeat(4, 1fr);
+     padding: 10px;
+     background-color: thistle;
+     margin: 10px;
+     gap: 50px;  /*same as line 17 and 18*/
+     /* column-gap: 50px;
+     row-gap: 50px; */
+}
+
+.grid-item {
+     background-color: wheat;
+     border: 1px solid black;
+     text-align: center;
+     padding: 15px;               
+}
+
+.item1 {
+     grid-column-start: 1;
+     grid-column-end: 3;
+}
+          item1 {
+               background-color: tomato;
+               grid-column-start: 1;
+               grid-column-end: 3;
+          }
+          .grid {
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+          }
+          .grid-item-1 {
+               grid-column-start: 1;
+               grid-column-end: 4;
+               grid-row-start: 1;
+               grid-row-end: 2;
+               background-color: turquoise;
+          }
+
+          .grid-item-2 {
+               grid-column-start: 1;
+               grid-column-end: 3;
+               grid-row-start: 2;
+               grid-column-end: 4;
+               background-color: skyblue;
+          }
+
+     </style>
+</head>
+<body>
+
+     <h1>CSS Grid</h1>
+          <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+     </div> 
+
+
+     <h2>My sd grid</h2>
+
+     <div class="grid">
+          <div class="grid-item-1">Grid Item 1</div>
+          <div class="grid-item-2">Grid Item 2</div>
+          <div>three</div>
+          <div>four</div>
+
+
+     </div>
+
+     
+</body>
+</html>
+
+
+
